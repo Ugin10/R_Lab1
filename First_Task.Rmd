@@ -30,7 +30,7 @@ change_to_number <- function(column){
 }
 ```
 
-Функция вызывает fix_data по очереди для каждого столбца:
+Функция вызывает change_to_number по очереди для каждого столбца:
 ```{r warning=FALSE}
 fix_data <- function(df) {
   data.frame(lapply(df, change_to_number))
