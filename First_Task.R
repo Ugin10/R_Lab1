@@ -1,4 +1,4 @@
-# ÇÀÄÀÍÈÅ 1
+# First 
 
 setwd("D:\\Documents\\POLYTECH\\7_SEM\\R")
 
@@ -19,7 +19,7 @@ task1_result <- fix_data(df)
 print(task1_result)
 
 
-# ÇÀÄÀÍÈÅ 2
+# Second
 get_id <- function(dfs) {
   new_df <- Reduce(function(x, y) merge(x, y, by = "id"), dfs)
   result <- data.?rame(id=new_df[, 1], mean=rowMeans(new_df[, -1]))
